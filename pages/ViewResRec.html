@@ -57,8 +57,8 @@
               <img src="../images/faces/face28.jpg" alt="profile"/>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item">
-                <i class="ti-user text-primary " href="Profile.html" ></i>
+              <a class="dropdown-item" href="Profile.html">
+                <i class="ti-user text-primary " ></i>
                 Profile
               </a>
               <a class="dropdown-item" href="login.html">
@@ -121,12 +121,28 @@
       </nav>
       <!-- partial -->
       <div class="main-panel">
+          
         <div class="content-wrapper">
+            <div class="template-demo"> 
+                <div class="template-demo mt-2">
+            <button type="button" class="btn btn-info btn-icon-text float-sm-right">
+              <i class="icon-book-open btn-icon-prepend "></i>                                                    
+              Add Member
+            </button>
+            <button type="button" class="btn btn-info btn-icon-text float-sm-right">
+                <i class="icon-book-open btn-icon-prepend "></i>                                                    
+                Update
+              </button>
+        </div>
+          </div>
+
           <div class="row">
+              
             <div class="col-md-12 grid-margin">
               <div class="row">
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                  <h3 class="font-weight-bold">Projects </h3>
+                    
+                  <h3 class="font-weight-bold">Resident Record Information </h3>
                   <!-- <h6 class="font-weight-normal mb-0">All systems are running smoothly! You have <span class="text-primary">3 unread alerts!</span></h6> -->
                 </div>
       
@@ -134,40 +150,60 @@
             </div>
           </div>
 
-          <!-- <button type="button" class="btn btn-outline-success btn-icon-text btn-md" href="#">
-                    <i class="  icon-book-open"></i>
-                    <a class="nav-link" href="#">Add Project</a>
-
-                  </button> -->
-                  
-                      
-                  
-         <div class="template-demo">
-            <div class="card-body">
-            <button type="button" onclick="location.href='AddProj.html'" class="btn btn-info btn-icon-text" >
-              <i class="icon-book-open btn-icon-prepend"></i>   
-                       
-              Add Project
-            </button>
-     
-        </div>
-          </div>
-
-         
-          <div class="col-12 grid-margin stretch-card">
+   
+          <div class="col-md-12 grid-margin stretch-card">
             <div class="card">
               <div class="card-body">
-               
-                <div class="form-group">
-                    <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Search Account" aria-label="Search">
-                      <div class="input-group-append">
-                        <button class="btn btn-sm btn-primary" type="button">Search</button>
-                      </div>
-                    </div>
+                
+          
+
+
+                <div class="d-flex justify-content-between">
+                    <h4 class="card-title">House Hold Record No. 25</h4>
+                   <h2 class="card-title">Purok: Sunflower</h2>
+                    <h2 class="card-title ">Zone: 3</h2>
+                   </div>
+
+                
+                <hr>
+
+      
+                  
+
+                <h3 class="card-title">Head of the household information</h3>
+
+                <div class="row">
+                  <div class="col-md-6">
+                 
+                      <p class="font-weight-bold">Name: KOLI KOL</p>
+                    <p class="font-weight-bold">Age: 69 </p>
+                    <p class="font-weight-bold">Gender: Female</p>
+                    <p class="font-weight-bold">Civil Status: Married</p>
+                    <p class="font-weight-bold">Address: Canduman</p>
+
                   </div>
+                  <div class="col-md-6">
+                  
+                        <p class="font-weight-bold">Ownership: Owner of house n lot</p>
+                        <p class="font-weight-bold">Housing Materials: Light materials</p>
+                        <p class="font-weight-bold">Toilet Facility: Owned</p>
+                        <p class="font-weight-bold">Water Source: Deep well</p>
+
+                        <p class="font-weight-bold">Waste Disposal: Collected by garbage truck</p>
+
+                        <p class="font-weight-bold">Pets: None</p>
 
                   
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+          <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+            <h3 class="font-weight-bold">Household Members </h3>
+            <!-- <h6 class="font-weight-normal mb-0">All systems are running smoothly! You have <span class="text-primary">3 unread alerts!</span></h6> -->
+          </div>
           <div class="col-lg-12 grid-margin stretch-card">
             <div class="card">
               <div class="card-body">
@@ -180,16 +216,16 @@
                     <thead>
                       <tr>
                         <th>
-                          No
+                          Record ID
                         </th>
                         <th>
-                          Project Name
+                          Name
                         </th>
                         <th>
-                          
+                          Relationship
                         </th>
                         <th>
-                         
+                          Contact number
                         </th>
                         <th>
                           <!-- Buttons -->
@@ -202,27 +238,26 @@
                           1
                         </td>
                         <td>
-                          Blood Donation
+                          Herman Beck
                         </td>
                         <td>
-                        
+                        Father
 
                         </td>
                         <td>
-                        
+                          0916587799
                         </td>
                         <td>
 
                             <div class="template-demo">
-                                <button type="button" onclick="location.href='ViewProj.html'" class="btn btn-outline-info btn-icon-text">
+                                <button type="button" onclick="location.href='ViewHouseMem.html'" class="btn btn-outline-info btn-icon-text">
                                     <i class="ti-search btn-icon-append"></i>                                                                              
                                     View
                                   </button>
-                                  <!-- <button type="button" class="btn btn-outline-danger btn-icon-text">
-                                    <i class="ti-trash btn-icon-prepend"></i>                                                    
-                                    Delete
-                                  </button> -->
-                   
+                                <button type="button" class="btn btn-outline-danger btn-icon-text">
+                                  <i class="ti-trash btn-icon-prepend"></i>                                                    
+                                  Delete
+                                </button>
                  
         
                               </div>
@@ -233,13 +268,13 @@
                          2
                         </td>
                         <td>
-                          Construction Worker
+                          Messsy Adam
                         </td>
                         <td>
-                         
+                         Mother
                         </td>
                         <td>
-                     
+                         09629595984
                         </td>
                         <td>
                             <div class="template-demo">
@@ -247,11 +282,10 @@
                                     <i class="ti-search btn-icon-append"></i>                                                                              
                                     View
                                   </button>
-                                  <!-- <button type="button" class="btn btn-outline-danger btn-icon-text">
-                                    <i class="ti-trash btn-icon-prepend"></i>                                                    
-                                    Delete
-                                  </button> -->
-                   
+                                <button type="button" class="btn btn-outline-danger btn-icon-text">
+                                  <i class="ti-trash btn-icon-prepend"></i>                                                    
+                                  Delete
+                                </button>
                  
         
                               </div>
@@ -262,13 +296,13 @@
                              3                   
                          </td>
                         <td>
-                          Dog Vaccination
+                          John Richards
                         </td>
                         <td>
-                          
+                       Child
                         </td>
                         <td>
-                       
+                         096895789
                         </td>
                         <td>
                             <div class="template-demo">
@@ -276,11 +310,10 @@
                                     <i class="ti-search btn-icon-append"></i>                                                                              
                                     View
                                   </button>
-                                  <!-- <button type="button" class="btn btn-outline-danger btn-icon-text">
-                                    <i class="ti-trash btn-icon-prepend"></i>                                                    
-                                    Delete
-                                  </button> -->
-                   
+                                <button type="button" class="btn btn-outline-danger btn-icon-text">
+                                  <i class="ti-trash btn-icon-prepend"></i>                                                    
+                                  Delete
+                                </button>
                  
         
                               </div>
@@ -295,12 +328,6 @@
               </div>
             </div>
           </div>
-
-              </div>
-            </div>
-          </div>
-
-
           
   
 
