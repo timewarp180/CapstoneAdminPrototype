@@ -73,7 +73,240 @@
         });
         document.getElementById('BmiStats-legend').innerHTML = GenderChart.generateLegend();
       }
+
+         
+     
+      if ($("#SOD-chart").length) {
+        var GenderChartCanvas = $("#SOD-chart").get(0).getContext("2d");
+        var GenderChart = new Chart(GenderChartCanvas, {
+          type: 'bar',
+          data: {
+            
+            labels: ['Infant', 'Child', 'Teenager', 'Adult', 'Senior'],
+            datasets: [{
+                label: '',
+                data: [480, 230, 470, 210, 330],
+                backgroundColor: ['#98BDFF', '#DB0345', '#FAD000', '#299438', '#AF38EB']       
+                     }
+            ]
+          },
+
+          options: {
+            cornerRadius: 5,
+            responsive: true,
+            maintainAspectRatio: true,
+            layout: {
+              padding: {
+                left: 0,
+                right: 0,
+                top: 20,
+                bottom: 50
+              }
+            },
+            scales: {
+              yAxes: [{
+                display: true,
+                gridLines: {
+                  display: true,
+                  drawBorder: false,
+                  color: "#F2F2F2"
+                },
+                ticks: {
+                  display: true,
+                  min: 0,
+                  max: 600,
+                  callback: function(value, index, values) {
+                    return  value + '' ;
+                  },
+                  autoSkip: true,
+                  maxTicksLimit: 10,
+                  fontColor:"#6C7383"
+                }
+              }],
+              xAxes: [{
+                stacked: false,
+                ticks: {
+                  beginAtZero: true,
+                  fontColor: "#6C7383"
+                },
+                gridLines: {
+                  color: "rgba(0, 0, 0, 0)",
+                  display: false
+                },
+                barPercentage: 1
+              }]
+            },
+            legend: {
+              display: false
+            },
+            elements: {
+              point: {
+                radius: 0
+              }
+            }
+          },
+        });
+        document.getElementById('SOD-legend').innerHTML = GenderChart.generateLegend();
+      }
+
+ 
+      if ($("#emprate-chart").length) {
+        var GenderChartCanvas = $("#emprate-chart").get(0).getContext("2d");
+        var GenderChart = new Chart(GenderChartCanvas, {
+          type: 'bar',
+          data: {
+            
+            labels: ['Employed', 'Unemployed'],
+            datasets: [{
+                label: '',
+                data: [480, 230, 470, 210, 330],
+                backgroundColor: ['#98BDFF', '#DB0345']       
+                     }
+            ]
+          },
+
+          options: {
+            cornerRadius: 5,
+            responsive: true,
+            maintainAspectRatio: true,
+            layout: {
+              padding: {
+                left: 0,
+                right: 0,
+                top: 20,
+                bottom: 50
+              }
+            },
+            scales: {
+              yAxes: [{
+                display: true,
+                gridLines: {
+                  display: true,
+                  drawBorder: false,
+                  color: "#F2F2F2"
+                },
+                ticks: {
+                  display: true,
+                  min: 0,
+                  max: 600,
+                  callback: function(value, index, values) {
+                    return  value + '' ;
+                  },
+                  autoSkip: true,
+                  maxTicksLimit: 10,
+                  fontColor:"#6C7383"
+                }
+              }],
+              xAxes: [{
+                stacked: false,
+                ticks: {
+                  beginAtZero: true,
+                  fontColor: "#6C7383"
+                },
+                gridLines: {
+                  color: "rgba(0, 0, 0, 0)",
+                  display: false
+                },
+                barPercentage: 1
+              }]
+            },
+            legend: {
+              display: false
+            },
+            elements: {
+              point: {
+                radius: 0
+              }
+            }
+          },
+        });
+        document.getElementById('emprate-legend').innerHTML = GenderChart.generateLegend();
+      }
+
       
+
+
+      if ($("#bloodT-chart").length) {
+        var GenderChartCanvas = $("#bloodT-chart").get(0).getContext("2d");
+        var GenderChart = new Chart(GenderChartCanvas, {
+          type: 'bar',
+          data: {
+            
+            labels: ['O+', 'O-', 'A+', 'A-', 'B+', 'B-', 'AB+', 'AB-'],
+
+            datasets: [{
+                label: '',
+                data: [480, 230, 470, 210, 330, 45, 555, 145],
+                backgroundColor: ['#98BDFF', '#DB0345', '#FAD000', '#299438', '#AF38EB','#158FAD', '#B8B8B8', '#FF8D85']  
+                     }
+            ]
+          },
+
+          options: {
+            cornerRadius: 5,
+            responsive: true,
+            maintainAspectRatio: true,
+            layout: {
+              padding: {
+                left: 0,
+                right: 0,
+                top: 20,
+                bottom: 50
+              }
+            },
+            scales: {
+              yAxes: [{
+                display: true,
+                gridLines: {
+                  display: true,
+                  drawBorder: false,
+                  color: "#F2F2F2"
+                },
+                ticks: {
+                  display: true,
+                  min: 0,
+                  max: 600,
+                  callback: function(value, index, values) {
+                    return  value + '' ;
+                  },
+                  autoSkip: true,
+                  maxTicksLimit: 10,
+                  fontColor:"#6C7383"
+                }
+              }],
+              xAxes: [{
+                stacked: false,
+                ticks: {
+                  beginAtZero: true,
+                  fontColor: "#6C7383"
+                },
+                gridLines: {
+                  color: "rgba(0, 0, 0, 0)",
+                  display: false
+                },
+                barPercentage: 1
+              }]
+            },
+            legend: {
+              display: false
+            },
+            elements: {
+              point: {
+                radius: 0
+              }
+            }
+          },
+        });
+        document.getElementById('bloodT-legend').innerHTML = GenderChart.generateLegend();
+      }
+
+      
+
+
+
+
+
+
       if ($("#BmiStats-chart-dark").length) {
         var GenderChartCanvas = $("#BmiStats-chart-dark").get(0).getContext("2d");
         var GenderChart = new Chart(GenderChartCanvas, {
@@ -151,6 +384,16 @@
       }
      
    
+
+
+
+
+
+
+
+
+
+
   
       function format ( d ) {
         // `d` is the original data object for the row
